@@ -23,6 +23,8 @@ showmount -e 192.168.1.11
 Export list for 192.168.1.11:
 /home *
 ```
+
+# 使用步骤
 ## 1.运行此脚本(server)
 
 ## 2.安装软件包(client)
