@@ -23,9 +23,19 @@ showmount -e 192.168.1.11
 Export list for 192.168.1.11:
 /home *
 ```
+## 1.运行此脚本(server)
 
-## 挂载到本地
+## 2.安装软件包(client)
+```
+sudo apt-get install nfs-common
+```
+
+## 3.挂载到本地(client)
 
 ```
-mount 192.168.1.11:/home  /mnt 
+sudo mount -t nfs ${IP}:/home /mnt -o nolock
+sudo mount -t nfs 192.168.217.131:/home /mnt -o nolock
 ```
+
+
+
